@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Roboto', sans-serif ;
+}
+
+
+
+:root{
+    --primary-color:#8D55C6;
+    --white: #FEFCFE;
+    --black: #110F11;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#register{
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+#login{
+    background: var(--white);
+    color: var(--black);
+}
+
+.box {
+    display: flex;
+    border: 5px solid transparent;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px 20px;
+    max-width: 350px;
+}
+
+.form-input{
+    outline: none;
+    border: 1px solid #efecec;
+    border-radius: 15px;
+    width: calc(100% - 1em);
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.form-input::placeholder{
+    color: lightgray;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    align-items: center;
+}
+
+small a{
+    cursor: pointer;
+}
+
+#login small a {
+    border-bottom: 0.1rem solid var(--black);
+}
+
+#register small a {
+    border-bottom: 0.1rem solid var(--white);
+}
+
+#login small a:hover{
+    color: var(--white);
+    border-color: var(--white)
+}
+
+#register small a:hover{
+    color: var(--black);
+    border-color: var(--black)
+}
+
+.title{
+    width: 100%;
+}
+
+.logo-wrapper{
+    width: 100px;
+}
+
+.logo-wrapper img{
+    width: 100%;
+}
+
+
+#login .box{
+    border-color: var(--black);
+}
+
+#register .box{
+    border-color: var(--white);
+}
+
+.border-white{
+    border-color: var(--white);
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+}
+
+.btn {
+    outline: none;
+    padding: 5px;
+    border-radius: 13px;
+    transition: 500ms;
+}
+
+#login .btn{
+    color: var(--white);
+    background: var(--black);
+    border: 1px solid var(--black);
+}
+
+#register .btn{
+    color: var(--black);
+    background: var(--white);
+    border: 1px solid var(--white);
+}
+
+#login .btn:hover{
+    background: var(--white);
+    color: var(--black);
+}
+
+
+#register .btn:hover, #register .btn:focus,#register .btn:active{
+    background: var(--primary-color);
+    color: var(--white);
+    border: 1px solid var(--black);
+}
